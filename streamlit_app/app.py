@@ -44,9 +44,9 @@ realtime_trend_title_list = [item['title'] for item in gg_realtime_data_dict['rs
 st.divider()
 col1, col2 = st.columns(2)
 with col1:
-    top_k_daily = st.slider("Top k daily trends", min_value=1, max_value=len(daily_trend_title_list), value=5)
+    top_k_daily = st.slider("Top k daily trends", min_value=1, max_value=len(daily_trend_title_list), value=3)
 with col2:
-    top_k_realtime = st.slider("Top k realtime trends", min_value=1, max_value=len(realtime_trend_title_list), value=5)
+    top_k_realtime = st.slider("Top k realtime trends", min_value=1, max_value=len(realtime_trend_title_list), value=3)
 
 @st.cache_data
 def scrape_daily_trends(_daily_data_dict, daily_trend_title_list):
