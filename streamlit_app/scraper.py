@@ -23,7 +23,7 @@ class TrendScraper():
         """
         self.rss_xml_url_daily = 'https://trends.google.fr/trends/trendingsearches/daily/rss?geo=US'
         self.rss_xml_url_realtime = 'https://trends.google.com/trending/rss?geo=US'
-        self.domains_skip_list = ["msn.com", "washingtonpost.com"]
+        self.domains_skip_list = ["msn.com", "nytimes.com"]
         if trend_type == "daily":
             self.rss_xml_url = self.rss_xml_url_daily
         elif trend_type == "realtime":

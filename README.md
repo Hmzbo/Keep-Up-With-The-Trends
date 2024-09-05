@@ -9,7 +9,6 @@ Example of a tweet generation:
 
 ![kuwtt_ui](./tweet_exp.png)
 
-
 ## Installation Steps
 To run this web application and the notebook, follow these installation steps:
 - With conda:
@@ -45,3 +44,7 @@ To use the notebook, simply open it in Jupyter Lab and follow the instructions p
 On average, the notebook or the first run of the app takes around 5-7 minues to run.
 
 **Remark:** The list of domains to skip is not final, so there will be cases where the scraper keeps on running without response. In which case, the urls should be manually investigated to locate the domain that's causing this issue (usually websites with newsletter subscription pop-up can cause this issue).
+
+### Diagram of Auto-RAG Pipeline for articles scraping & summarization:
+
+![diagram](./diagram_bg.png)
